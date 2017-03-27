@@ -31,7 +31,7 @@ public class IndexController {
         ctaBuilder.append(", ");
       }
     }
-    ctaBuilder.append(" and ");
+    ctaBuilder.append(", and ");
     Long totalCount = flashCardService.getCurrentCount();
     ctaBuilder.append(totalCount - AMOUNT_TO_SHOW);
     ctaBuilder.append(" more");
